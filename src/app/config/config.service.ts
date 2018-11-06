@@ -7,7 +7,7 @@ import { load } from '@angular/core/src/render3';
 })
 export class ConfigService {
 
-  env: Object = {}
+  env: Object = {};
 
   constructor(private http: HttpClient) {
     this.loadAppConfig();
@@ -19,11 +19,11 @@ export class ConfigService {
      .subscribe(data => {
       this.env = data;
       resolve(true);
-     })
-  })
+     });
+  });
   }
 
-  get config() {
+  getconfig() {
     return this.env;
-  } 
+  }
 }
