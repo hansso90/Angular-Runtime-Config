@@ -3,7 +3,7 @@
 ## Use Case:
 
 Angular client applications that are started in Kubernetes has different endpoints and you want to load these config endpoints at the startup of HTTP Server
-This project will create the config.json at started of NGINX. When the Angular app is loading it will make a request to the assets where config.json file is created.
+This project will create the config.json at started of NGINX. When the Angular app is loading it will make a request to the assets where config.json file is created. The environments with a certain prefix will appear in the config.json. The environments prefix can set by 'ENV_PREFIX' 
 
 ## Frameworks
 
